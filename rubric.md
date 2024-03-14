@@ -10,39 +10,39 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 ## Assignment Points:
 
-_____ 1 pt: The `House`, `Library`, and `Cafe` classes all `extend` the `Building` class.
+___part__ 1 pt: The `House`, `Library`, and `Cafe` classes all `extend` the `Building` class.
 
 ### Level 1: `House.java` (3 pts)
 
-_____ 1 pt: The `House` class includes the requested attributes
+___y__ 1 pt: The `House` class includes the requested attributes
 
-_____ 1 pt: The `House` class implements the requested accessors
+___p__ 1 pt: The `House` class implements the requested accessors
 
-_____ 1 pt: The `House` class implements the requested additional methods (`moveIn(...)`, `moveOut(...)`, and `isResident(...)`)
+___p__ 1 pt: The `House` class implements the requested additional methods (`moveIn(...)`, `moveOut(...)`, and `isResident(...)`)
 
 ### Level 2: `Library.java` (3 pts)
 
-_____ 1 pt: The `Library` class includes the requested attributes
+___y__ 1 pt: The `Library` class includes the requested attributes
 
-_____ 1 pt: The `Library` class implements the requested methods to add / remove or check out / return titles
+___p__ 1 pt: The `Library` class implements the requested methods to add / remove or check out / return titles
 
-_____ 1 pt: The `Library` class implements the requested additional methods (`containsTitle(...)`, `isAvailable(...)`, and `printCollection()`)
+___p__ 1 pt: The `Library` class implements the requested additional methods (`containsTitle(...)`, `isAvailable(...)`, and `printCollection()`)
 
 ### Level 3: `Cafe.java` (3 pts)
 
-_____ 1 pt: The `Cafe` class includes the requested attributes
+___y__ 1 pt: The `Cafe` class includes the requested attributes
 
-_____ 1 pt: The `Cafe` class keeps the inventory up to date, based on sales
+___p__ 1 pt: The `Cafe` class keeps the inventory up to date, based on sales
 
-_____ 1 pt: The `Cafe` class uses the `restock(...)` method to avoid running out of inventory.
+___p__ 1 pt: The `Cafe` class uses the `restock(...)` method to avoid running out of inventory.
 
 
 
 ## General Items:
 
-_____ 4 pts: Programs compile without errors or warnings
+___n__ 4 pts: Programs compile without errors or warnings
 
-_____ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+___n__ 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
 _____ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
