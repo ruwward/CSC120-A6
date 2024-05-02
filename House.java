@@ -5,34 +5,65 @@ public class House extends Building {
   private ArrayList<String> residents;
   private boolean hasDiningRoom;
   
+  /**
+* creates a new house
+* @param hadDiningRoom t/f
+*/
   public House(Boolean hasDiningRoom) {
     residents = new ArrayList<String>();
     this.hasDiningRoom = hasDiningRoom;
     System.out.println("You have built a house: 🏠");
   }
 
-  public boolean getDiningRoom() {
+  /**
+* returns true/false if it has dining room
+* @return t/f
+*/
+  public boolean hasDiningRoom() {
     return this.hasDiningRoom;
   }
 
+  /**
+* returns number of residents
+* @return int of size of arraylist
+*/
   public int nResidents() {
     return residents.size();
   }
 
+  /**
+* adds person to residents arraylist
+* @param name of person
+*/
   public void moveIn(String name){
     residents.add(name);
   }
 
-  public String moveOut(String name){ // return the name of the person who moved out
+  /**
+* return the name of the person who moved out
+* @param name of person
+* @return name of person
+*/
+  public String moveOut(String name){
     residents.remove(name);
     return name;
   }
 
+  /**
+* resturns t/f if person lives in the house
+* @param person
+* @return t/f do they live there
+*/
   public boolean isResident(String person){
     return residents.contains(person);
   }
+
+  /**
+* main, runs house method
+* @param args
+*/
   public static void main(String[] args) {
-    new House();
+    new House(true);
   }
 
 }

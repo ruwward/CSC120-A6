@@ -10,23 +10,23 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 ## Assignment Points:
 
-___part__ 1 pt: The `House`, `Library`, and `Cafe` classes all `extend` the `Building` class.
+___y__ 1 pt: The `House`, `Library`, and `Cafe` classes all `extend` the `Building` class.
 
 ### Level 1: `House.java` (3 pts)
 
 ___y__ 1 pt: The `House` class includes the requested attributes
 
-___p__ 1 pt: The `House` class implements the requested accessors
+___y__ 1 pt: The `House` class implements the requested accessors
 
-___p__ 1 pt: The `House` class implements the requested additional methods (`moveIn(...)`, `moveOut(...)`, and `isResident(...)`)
+___y__ 1 pt: The `House` class implements the requested additional methods (`moveIn(...)`, `moveOut(...)`, and `isResident(...)`)
 
 ### Level 2: `Library.java` (3 pts)
 
 ___y__ 1 pt: The `Library` class includes the requested attributes
 
-___p__ 1 pt: The `Library` class implements the requested methods to add / remove or check out / return titles
+___y__ 1 pt: The `Library` class implements the requested methods to add / remove or check out / return titles
 
-___p__ 1 pt: The `Library` class implements the requested additional methods (`containsTitle(...)`, `isAvailable(...)`, and `printCollection()`)
+___y__ 1 pt: The `Library` class implements the requested additional methods (`containsTitle(...)`, `isAvailable(...)`, and `printCollection()`)
 
 ### Level 3: `Cafe.java` (3 pts)
 
@@ -40,9 +40,9 @@ ___p__ 1 pt: The `Cafe` class uses the `restock(...)` method to avoid running ou
 
 ## General Items:
 
-___n__ 4 pts: Programs compile without errors or warnings
+___p__ 4 pts: Programs compile without errors or warnings
 
-___n__ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+___p__ 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
 _____ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
