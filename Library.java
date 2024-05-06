@@ -5,7 +5,8 @@ public class Library extends Building{
 
   private Hashtable<String, Boolean> collection;
 
-  public Library() {
+  public Library(String name, String address, int nFloors) {
+    super(name, address, nFloors);
     collection = new Hashtable<String, Boolean>();
     System.out.println("You have built a library: 📖");
   }
@@ -40,7 +41,9 @@ public class Library extends Building{
   }
 
   public static void main(String[] args) {
-    new Library();
+    Library library = new Library("Northampton Public Library", "522 Main St", 4);
+    library.addTitle("One Fish Two Fish");
+    library.printCollection();
   }
   
 }

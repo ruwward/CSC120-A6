@@ -1,12 +1,13 @@
 /* This is a stub for the Cafe class */
 public class Cafe extends Building {
 
-    private int nCoffeeOunces = 300; // The number of ounces of coffee remaining in inventory
-    private int nSugarPackets = 100; // The number of sugar packets remaining in inventory
-    private int nCreams = 100; // The number of "splashes" of cream remaining in inventory
-    private int nCups = 30; // The number of cups remaining in inventory
+    private int nCoffeeOunces; // The number of ounces of coffee remaining in inventory
+    private int nSugarPackets; // The number of sugar packets remaining in inventory
+    private int nCreams; // The number of "splashes" of cream remaining in inventory
+    private int nCups; // The number of cups remaining in inventory
 
-    public Cafe(int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups) {
+    public Cafe(String name, String address, int nFloors, int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups) {
+        super(name, address, nFloors);
         this.nCoffeeOunces = nCoffeeOunces;
         this.nSugarPackets = nSugarPackets;
         this.nCreams = nCreams;
@@ -22,27 +23,30 @@ public class Cafe extends Building {
         if(this.nCoffeeOunces<nCoffeeOunces){  
             restock();
         }
-        elif(this.nSugarPackets<nSugarPackets){  
+        else if(this.nSugarPackets<nSugarPackets){  
             restock();
         }  
-        elif(this.nCreams<nCreams){  
+        else if(this.nCreams<nCreams){  
             restock();
         }  
-        elif(nCups<1){  
+        else if(nCups<1){  
             restock();
         }
     }
 
     private void restock(){
-        this.nCoffeeOunces = nCoffeeOunces;
-        this.nSugarPackets = nSugarPackets;
-        this.nCreams = nCreams;
-        this.nCups = nCups;
+        this.nCoffeeOunces = 300;
+        this.nSugarPackets = 100;
+        this.nCreams = 100;
+        this.nCups = 30;
         System.out.println("restock complete!");
     }
 
     public static void main(String[] args) {
-        Cafe Pete = new Cafe("Pete's", "123 Main St", 2);
+        Cafe pete = new Cafe("Pete's", "123 Main St", 2, 170, 6, 43, 27);
+        pete.sellCoffee(12, 3, 0);
+        pete.sellCoffee(24, 4, 2);
+        pete.sellCoffee(12, 5, 2);
     }
     
 }

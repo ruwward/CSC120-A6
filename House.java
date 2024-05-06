@@ -9,7 +9,8 @@ public class House extends Building {
 * creates a new house
 * @param hadDiningRoom t/f
 */
-  public House(Boolean hasDiningRoom) {
+  public House(String name, String address, int nFloors, Boolean hasDiningRoom) {
+    super(name, address, nFloors);
     residents = new ArrayList<String>();
     this.hasDiningRoom = hasDiningRoom;
     System.out.println("You have built a house: 🏠");
@@ -63,7 +64,9 @@ public class House extends Building {
 * @param args
 */
   public static void main(String[] args) {
-    new House(true);
+    House myHouse = new House("My House", "425 Main St", 3, true);
+    myHouse.moveIn("Me!");
+    System.out.println(myHouse.nResidents());
   }
 
 }
